@@ -1,9 +1,9 @@
 #lang scheme
-; Scheme_1 laboratory work tasks solution
-; Laboratory work timestamp: 18/10/2022
-; Done by Kariagina Polina, group MT-101 / MEH-120101
+ Scheme_1 laboratory work tasks solution
+ Laboratory work timestamp: 18/10/2022
+ Done by Kariagina Polina, group MT-101 / MEH-120101
 
-; Task 1
+ Task 1
 (define (distance a x y)
 	(define dX (if ( > (- (abs x) a) 0) (- (abs x) a) 0))
 	(define dY (if ( > (- (abs y) a) 0) (- (abs y) a) 0))
@@ -16,7 +16,7 @@
 	(if (> result 0) result 0)
 )
 
-; Task 2
+ Task 2
 (define (angle h m)
 	(define out (abs (-
 		(* 30 (+ h (/ m 60)))
@@ -26,7 +26,7 @@
 	(if (> out 180) (- 360 out) out)
 )
 
-; Task 3
+ Task 3
 (define (n2l n)
 	(define des (floor (/ n 10)))
 	(define edn (remainder n 10))
@@ -68,7 +68,7 @@
 	)
 )
 
-; Task 4
+ Task 4
 (define (elephantandpawn sx sy px py)
 	(if (= (remainder (+ (remainder sx 2) (remainder sy 2)) 2) (remainder (+ (remainder px 2) (remainder py 2)) 2))
 		(if (= (abs (- sx px)) (abs (- sy py)) ) 1 2)
@@ -76,7 +76,7 @@
 	)
 )
 
-; Task 5
+ Task 5
 
 (define (kingandpawn kx ky px py)
 	(and (not (= py 8))
