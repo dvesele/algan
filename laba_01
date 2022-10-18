@@ -76,7 +76,7 @@
 (define (elephantandpawn sx sy px py)
 	(if (= (remainder (+ (remainder sx 2) (remainder sy 2)) 2) (remainder (+ (remainder px 2) (remainder py 2)) 2))
 		(if (= (abs (- sx px)) (abs (- sy py)) ) 1 2)
-		-1 ; if colors of squares, where figures placed, are different, mission impossible, returning error code
+		-1 
 	)
 )
 
