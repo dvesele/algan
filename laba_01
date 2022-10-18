@@ -27,9 +27,10 @@
 )
 
  Task 3
-(define (n2l n)
+#lang scheme
+(define (слово n)
 	(define des (floor (/ n 10)))
-	(define edn (remainder n 10))
+	(define edn (remainder  n 10))
 	(cond
 		( (= n 11) (display "одиннадцать" ))
 		( (= n 12) (display "двенадцать" ))
@@ -40,15 +41,15 @@
 		( (= n 17) (display "семнадцать" ))
 		( (= n 18) (display "восемнадцать" ))
 		( (= n 19) (display "девятнадцать" ))
-		((= n 100)(display “сто”))
-		(else (
+		((= n 100)(display "сто"))
+		(else 
 
 				(cond
 					( (= des 2) (display "двадцать ") )
 					( (= des 3) (display "тридцать ") )
 					( (= des 4) (display "сорок ") )
 					( (= des 5) (display "пятьдесят ") )
-					( (= des 6) (display "шесть ") )
+					( (= des 6) (display "шестьдесят ") )
 					( (= des 7) (display "семьдесят ") )
 					( (= des 8) (display "восемьдесят ") )
 					( (= des 9) (display "девяносто ") )
@@ -65,7 +66,7 @@
 					( (= edn 9) (display "девять") )
 				)
 
-		))
+	)
 	)
 )
 
