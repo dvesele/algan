@@ -32,6 +32,7 @@
 	(define des (floor (/ n 10)))
 	(define edn (remainder  n 10))
 	(cond
+	        ((= n 10) (display "десять"))
 		( (= n 11) (display "одиннадцать" ))
 		( (= n 12) (display "двенадцать" ))
 		( (= n 13) (display "тринадцать" ))
@@ -68,6 +69,7 @@
 
 	)
 	)
+	
 )
 
  Task 4
