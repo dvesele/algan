@@ -1,4 +1,5 @@
 #lang racket
+ ;Переименуйие функции прежде чем пиздить лабу. Нет, Андрей != функция
 ;1
 (define (min a)
   (define (g a s)
@@ -7,17 +8,7 @@
 ;2.1
 (define (same a)
    (= 1 (length(remove-duplicates(string->list(number->string a))))))
-;2.2
-(define (same1 a)
-  (define (itter a s)
-    (if (= a 0) (= 1 (length s))
-        (let ((x (remainder a 10)) (y (quotient a 10)))
-          (if (member x s) (itter y s) (itter y (cons x s))))))
-  (if (= a 0) #t (itter a null)))
-;2.3
-(define (same2 x)
-  (define (f a b)
-    (if (= a 0) #t (if (= (remainder a 10) b)(f (quotient a 10) b) #f )))(f x (remainder x 10)))
+
 ;3
 (define (factorial a)
   (define (number c d)
