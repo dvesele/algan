@@ -24,7 +24,7 @@
 	)))
 ; show the shortest angle representation value
 	(if (> out 180) (- 360 out) out)
-)
+) НЕ ЗАЧЕЛ
 
  Task 3
 #lang scheme
@@ -90,3 +90,5 @@
 		)
 	)
 )
+НЕ ЗАЧЕЛ
+
