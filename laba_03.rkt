@@ -1,5 +1,5 @@
 #lang scheme
- ;Scheme_2 laboratory work tasks solution
+ ;Scheme_3 laboratory work tasks solution
  ;Laboratory work timestamp: 27/10/2022
  ;Done by Kariagina Polina, group MT-101 / MEH-120101
 
