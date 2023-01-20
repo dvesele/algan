@@ -1,10 +1,6 @@
 #lang racket
  ;Переименуйие функции прежде чем пиздить лабу. Нет, Андрей != функция
-;1
-(define (min a)
-  (define (g a s)
-    (if (= a 0) s (g(quotient a 10)(if (< s (remainder a 10)) s (remainder a 10)))))
-  (g (abs a) (abs (remainder a 10))))
+;
 ;2.1
 (define (same a)
    (= 1 (length(remove-duplicates(string->list(number->string a))))))
